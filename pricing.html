@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pricing — 30 AI Systems You Can Build Without Coding</title>
+<script src="https://cdn.paddle.com/paddle/v2/paddle.js"></script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+body{margin:0;background:#F7F3E8;font-family:'Inter',sans-serif;color:#071A33;}
+a{color:#2C9C96;}
+a:hover{color:#F26B4F;}
+@keyframes floatCard{0%,100%{transform:translateY(0) rotate(-2deg);}50%{transform:translateY(-10px) rotate(-1deg);}}
+@media (max-width:767px){
+  .pricing-grid{grid-template-columns:1fr !important;gap:36px !important;}
+  .pricing-mockup-wrap{max-width:62% !important;}
+  .included-grid{grid-template-columns:repeat(2,minmax(0,1fr)) !important;}
+  .pricing-h1{font-size:36px !important;}
+}
+@media (max-width:374px){
+  .pricing-mockup-wrap{max-width:54% !important;}
+  .included-grid{grid-template-columns:1fr !important;}
+  .pricing-h1{font-size:30px !important;}
+}
+</style>
+<script>
+Paddle.Initialize({ token: "live_6ce81b55a9c979ae0ce4416442e" });
+function openEbookCheckout(){
+  var downloadToken = crypto.randomUUID();
+  sessionStorage.setItem("ebook_download_token", downloadToken);
+  Paddle.Checkout.open({
+    items: [{ priceId: "pri_01m43bbcp7f44z5cwvgypyprtq", quantity: 1 }],
+    customData: { download_token: downloadToken },
+    settings: {
+      displayMode: "overlay",
+      variant: "one-page",
+      successUrl: "https://nexorastudios.me/thank-you.html"
+    }
+  });
+}
+</script>
+</head>
+<body>
+
+<div style="max-width:100vw;overflow-x:hidden;background:#F7F3E8;">
+
+<div style="position:sticky;top:0;z-index:50;background:rgba(247,243,232,0.92);backdrop-filter:blur(6px);border-bottom:1px solid rgba(7,26,51,0.1);">
+  <div style="max-width:1200px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;">
+    <a href="index.html" style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:15px;color:#071A33;letter-spacing:0.02em;text-decoration:none;">Nexora Studios</a>
+    <a href="javascript:void(0)" onclick="openEbookCheckout()" style="background:#F26B4F;color:#071A33;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:14px;padding:11px 22px;border-radius:8px;text-decoration:none;white-space:nowrap;">Buy the eBook</a>
+  </div>
+</div>
+
+<div class="pricing-grid" style="max-width:1200px;margin:0 auto;padding:72px 24px 88px;display:grid;grid-template-columns:1.1fr 0.9fr;gap:64px;align-items:center;">
+  <div>
+    <div style="display:inline-block;background:rgba(44,156,150,0.14);color:#1d6f6a;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:13px;letter-spacing:0.06em;text-transform:uppercase;padding:6px 14px;border-radius:100px;margin-bottom:22px;">2026 Edition</div>
+    <h1 class="pricing-h1" style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:46px;line-height:1.1;color:#071A33;margin:0 0 20px;">30 AI Systems You Can Build Without Coding</h1>
+    <p style="font-size:19px;line-height:1.5;color:#071A33;opacity:0.75;margin:0 0 24px;max-width:480px;">A plain-English playbook for small business owners, freelancers, marketers and solopreneurs.</p>
+    <p style="font-size:17px;line-height:1.6;color:#071A33;margin:0 0 32px;max-width:480px;">A practical eBook that shows small business owners, freelancers, marketers, and solopreneurs how to build 30 useful AI-powered systems without coding.</p>
+    <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:44px;color:#071A33;margin-bottom:24px;">$9.99 <span style="font-size:17px;font-weight:600;opacity:0.6;">USD</span></div>
+    <div style="display:flex;align-items:center;gap:20px;flex-wrap:wrap;">
+      <a href="javascript:void(0)" onclick="openEbookCheckout()" style="background:#F26B4F;color:#071A33;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:17px;padding:18px 34px;border-radius:10px;text-decoration:none;box-shadow:0 12px 30px rgba(242,107,79,0.35);">Buy the eBook — $9.99</a>
+      <div style="font-size:14px;color:#071A33;opacity:0.6;">Instant digital access after payment</div>
+    </div>
+  </div>
+  <div style="position:relative;display:flex;justify-content:center;">
+    <div class="pricing-mockup-wrap" style="width:100%;max-width:340px;aspect-ratio:3/4;transform:rotate(-2deg);animation:floatCard 6s ease-in-out infinite;box-shadow:0 40px 70px rgba(7,26,51,0.25);border-radius:6px;overflow:hidden;">
+      <img src="assets/cover-mockup.webp" alt="30 AI Systems You Can Build Without Coding — eBook cover" style="display:block;width:100%;height:100%;object-fit:cover;">
+    </div>
+  </div>
+</div>
+
+<div style="background:#FFFFFF;padding:88px 24px;">
+  <div style="max-width:900px;margin:0 auto;">
+    <h2 style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:32px;line-height:1.2;color:#071A33;margin:0 0 40px;text-align:center;">What's included</h2>
+    <div class="included-grid" style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;">
+      <div style="background:#F7F3E8;border-radius:14px;padding:26px 22px;"><div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:16px;color:#071A33;">30 practical AI systems</div></div>
+      <div style="background:#F7F3E8;border-radius:14px;padding:26px 22px;"><div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:16px;color:#071A33;">Six-step no-code implementation method</div></div>
+      <div style="background:#F7F3E8;border-radius:14px;padding:26px 22px;"><div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:16px;color:#071A33;">Starter prompts and practical guidance</div></div>
+      <div style="background:#F7F3E8;border-radius:14px;padding:26px 22px;"><div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:16px;color:#071A33;">30-day implementation plan</div></div>
+      <div style="background:#F7F3E8;border-radius:14px;padding:26px 22px;"><div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:16px;color:#071A33;">Quick-reference guide</div></div>
+      <div style="background:#F7F3E8;border-radius:14px;padding:26px 22px;"><div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:16px;color:#071A33;">Responsible AI implementation guidance</div></div>
+    </div>
+  </div>
+</div>
+
+<div style="background:#071A33;padding:88px 24px;">
+  <div style="max-width:800px;margin:0 auto;text-align:center;">
+    <h2 style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:30px;color:#F7F3E8;margin:0 0 36px;">Key benefits</h2>
+    <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;text-align:left;">
+      <div style="display:flex;gap:14px;align-items:flex-start;"><div style="width:6px;height:6px;border-radius:50%;background:#F26B4F;margin-top:9px;flex-shrink:0;"></div><div style="font-size:16px;line-height:1.55;color:#F7F3E8;opacity:0.85;">Automate repetitive tasks without coding</div></div>
+      <div style="display:flex;gap:14px;align-items:flex-start;"><div style="width:6px;height:6px;border-radius:50%;background:#F26B4F;margin-top:9px;flex-shrink:0;"></div><div style="font-size:16px;line-height:1.55;color:#F7F3E8;opacity:0.85;">Save time on common business workflows</div></div>
+      <div style="display:flex;gap:14px;align-items:flex-start;"><div style="width:6px;height:6px;border-radius:50%;background:#F26B4F;margin-top:9px;flex-shrink:0;"></div><div style="font-size:16px;line-height:1.55;color:#F7F3E8;opacity:0.85;">Turn repeated manual processes into simple AI-powered systems</div></div>
+      <div style="display:flex;gap:14px;align-items:flex-start;"><div style="width:6px;height:6px;border-radius:50%;background:#F26B4F;margin-top:9px;flex-shrink:0;"></div><div style="font-size:16px;line-height:1.55;color:#F7F3E8;opacity:0.85;">Learn practical AI automation in plain English</div></div>
+    </div>
+  </div>
+</div>
+
+<div style="background:#FFFFFF;padding:80px 24px;text-align:center;">
+  <div style="max-width:600px;margin:0 auto;">
+    <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:22px;color:#071A33;margin-bottom:12px;">Instant digital access</div>
+    <p style="font-size:16px;line-height:1.6;color:#071A33;opacity:0.75;margin:0 0 36px;">One-time purchase. Digital eBook delivered after successful payment.</p>
+    <a href="javascript:void(0)" onclick="openEbookCheckout()" style="display:inline-block;background:#F26B4F;color:#071A33;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:17px;padding:18px 40px;border-radius:10px;text-decoration:none;box-shadow:0 12px 30px rgba(242,107,79,0.35);">Buy the eBook — $9.99</a>
+  </div>
+</div>
+
+<div style="background:#050f20;padding:40px 24px;">
+  <div style="max-width:1000px;margin:0 auto;display:flex;justify-content:space-between;flex-wrap:wrap;gap:20px;">
+    <div style="font-size:13px;color:#F7F3E8;opacity:0.5;">30 AI Systems You Can Build Without Coding — 2026 Edition</div>
+    <div style="display:flex;gap:24px;flex-wrap:wrap;">
+      <a href="privacy.html" style="font-size:13.5px;color:#F7F3E8;opacity:0.7;text-decoration:none;">Privacy Policy</a>
+      <a href="terms.html" style="font-size:13.5px;color:#F7F3E8;opacity:0.7;text-decoration:none;">Terms</a>
+      <a href="refund.html" style="font-size:13.5px;color:#F7F3E8;opacity:0.7;text-decoration:none;">Refund Policy</a>
+      <a href="mailto:support@nexorastudios.me" style="font-size:13.5px;color:#F7F3E8;opacity:0.7;text-decoration:none;">Contact</a>
+    </div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>
